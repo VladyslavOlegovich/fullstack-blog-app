@@ -1,0 +1,24 @@
+1. ініціалізуємо проект - npm init -y
+2. встановлюємо експрес - npm i express 
+3. в package.json додаємо в scripts{} команду для запуску - "start": "node index.js(назва головного файлу)
+додаємо "type":"module"
+4. в головному файлі створюємо порт - const PORT = 5000(наприклад)
+5. викликаємо функцію express і створюємо екзепляр - const app = express() app.listen(PORT)
+6. встановлюємо нодемон -  npm i -D nodemon
+7. додаємо в package.json в скриптс новий скрипт - "dev": "nodemon index.js"
+8. дозволяємо app працювати з json - app.use(express.json())
+9. створюємо АСИНХРОННУ функцію startApp і в блок try переносимо запуск серверу (app.listen()) і ВИКЛИКАЄМО ФУНКЦІЮ
+10. встановлюємо orm sequelize - npm i sequelize
+11. створюємо const Sequelize = require("sequelize");
+12. створюємо папку db де будемо працювати з базою даних
+13. в папці db створюємо модель в бд - Name.js(blog users etc)
+14. описуємо цю модель
+15. в головному файлі підключаємо базу даних - const  db = require('/db')
+16. npm i mysql2
+17. створюємо роутер (новий файл - router.js) import Router from 'express' тут ми будемо описувати всі маршрути
+18. в index.js реєструємоо роутер - app.use('/api',router)
+19. встановлюємо пакет dotenv - npm i dotenv
+20.  npm i passport 
+21. npm i bcrypt
+22. npm i jsonwebtoken
+required - oldschool, use import - import express from "express";
