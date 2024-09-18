@@ -1,4 +1,4 @@
-Fullstack Blog Project
+
 Currently, I am working on a fullstack project, which is a blog. 
 To start the server, you need to run the database. You can do this using an Apache server. 
 Here are the fields you need to include in the .env file located in the backend folder:
